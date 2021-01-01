@@ -1,0 +1,220 @@
+.hamburger-button {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  /* display: none; */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 25px;
+  z-index: 99999999999;
+  color: black;
+}
+.hamburger-button .bar {
+  height: 4px;
+  width: 100%;
+  border-radius: 4px;
+  background: #071b29;
+}
+/* -------------------Navbar START-------------------------------------------------- */
+.sidebar {
+  z-index: 99;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  flex: 1;
+  background-color: #022572;
+  padding: 0 30px;
+}
+.sidebar2 {
+  background-color: #f2f1ed;
+  transition: background-color 200ms linear;
+}
+.header-link {
+  color: white;
+  text-decoration: none;
+}
+.sidebar > h1 {
+  font-size: 30px;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  /* top: 180px; */
+  list-style: none;
+  text-decoration: none;
+  margin: 15px;
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0 15px;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.link:hover {
+  text-decoration: underline;
+}
+/* .active {
+    text-decoration: underline;
+  } */
+
+#check {
+  display: none;
+}
+label #btn,
+label #cancel {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+/* -------------------Navbar END-------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .sidebar {
+    top: -250px;
+    opacity: 0.85;
+    z-index: 999;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ffffff; */
+    transition: all 0.5s ease;
+  }
+  .sidebar > h1 {
+    display: none;
+  }
+  ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    padding: 20px 0;
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+    /* background-color: gold; */
+  }
+  .link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 15px 0;
+  }
+  .close-bar {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari and Chrome */
+  }
+
+  .close-bar:before,
+  .close-bar:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: #ffffff;
+    border-radius: 2px;
+  }
+
+  .close-bar:before {
+    left: 53%;
+
+    width: 2px;
+    margin-left: -15%;
+    height: 90%;
+  }
+
+  .close-bar:after {
+    top: 53%;
+    height: 2px;
+    margin-top: -15%;
+    width: 90%;
+  }
+
+  label #btn,
+  label #cancel {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+  }
+  label #btn {
+    right: -30px;
+    top: 20px;
+    font-size: 40px;
+    width: 80px;
+    /* color: red; */
+    border-radius: px;
+    z-index: 999;
+    /* transition: all 0.5s ease; */
+  }
+  .bar-holder {
+    width: 26px;
+    height: 22px;
+    /* background-color: blue; */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bar-holder > div {
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: black;
+  }
+  .bar-holder > div:nth-child(2) {
+    width: 100%;
+  }
+  label #cancel {
+    z-index: 1111;
+    right: -150px;
+    top: 0px;
+    /* font-weight: lighter; */
+    transition: all 0.8s ease;
+    position: fixed;
+    /* display: none; */
+  }
+  label #cancel::selection {
+    color: none;
+    background: none;
+  }
+
+  #check:checked ~ .sidebar {
+    top: 0px;
+  }
+  #check:checked ~ label #btn {
+    /* left: 0px; */
+    display: none;
+    pointer-events: none;
+  }
+  #check:checked ~ label #cancel {
+    top: 20px;
+    right: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .logo__container {
+    align-self: center;
+    width: 90%;
+    object-fit: contain;
+  }
+}
