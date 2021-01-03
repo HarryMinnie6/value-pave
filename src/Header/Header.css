@@ -20,9 +20,11 @@
 .sidebar {
   z-index: 99;
   position: fixed;
+  top:0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 50px;
   width: 100vw;
   flex: 1;
   background-color: #022572;
@@ -82,6 +84,9 @@ label #cancel {
 /* -------------------Navbar END-------------------------------------------------- */
 
 @media (max-width: 768px) {
+  .header-link {
+ display: none;
+  }
   .sidebar {
     top: -250px;
     opacity: 0.85;

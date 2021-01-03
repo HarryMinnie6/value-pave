@@ -1,6 +1,11 @@
 import "./App.css";
 import Header from "./Header/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from "./Footer/Footer";
+import ContactBar from "./ContactBar/ContactBar";
+import Home from "./HomePage/Home";
+import AboutSection from "./AboutSection/AboutSection";
+import Specialities from "./Specialities/Specialities";
 
 function App() {
   return (
@@ -18,6 +23,10 @@ function App() {
 
         <Route path='/'>
           <Header />
+          <Home />
+          <Specialities />
+          <AboutSection />
+          <Footer />
         </Route>
       </Switch>
     </Router>

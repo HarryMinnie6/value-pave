@@ -31,7 +31,7 @@ function Header() {
         </div>
       </label>
       
-      <nav className={scroll ? "sidebar sidebar2" : "sidebar "}>
+      <nav className="sidebar ">
       <Link className='header-link'><h1>Value Pave</h1></Link>
       
      
@@ -52,7 +52,7 @@ function Header() {
           <li>
             <Link
               className="link"
-              to="about"
+              to="services"
               activeClass="active"
               spy={true}
               smooth={true}
@@ -65,7 +65,7 @@ function Header() {
           <li>
             <Link
               className="link"
-              to="projects"
+              to="about"
               activeClass="active"
               spy={true}
               smooth={true}
