@@ -12,7 +12,7 @@
 .speciality > h1 {
   font-weight: 400;
   color: black;
-  font-size: 30px;
+  font-size: 25px;
   /* text-shadow: 0px 0px 3px rgb(65, 65, 65); */
   width: 100%;
   text-align: center;
@@ -73,7 +73,7 @@
   }
   .speciality > h1 {
     top: 70px;
-    font-size: 30px;
+    font-size: 25px;;
   }
   .speciality-image {
     height: 330px;

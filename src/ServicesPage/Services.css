@@ -104,12 +104,15 @@
   .services-details__paragraph2-li{
       color: black;
       list-style-type: disc;
+      align-self: flex-start;
+      text-align: left;
   }
   .services-details__paragraph2-ul{
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       /* background: red; */
+      margin: 10px 15px
   }
   .services-details__paragraph > a,
   .services-details__paragraph2 > a {

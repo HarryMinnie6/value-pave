@@ -21,7 +21,7 @@ function Services() {
               range of pavers in clay, cement and simulated stone, from various
               reputable manufacturers in South Africa.
             </p>
-            <a href='#'>Learn More</a>
+           {/*<a href='#'>Learn More</a> */}
           </div>
           <div className='services-details__img-holder'>
             <img
@@ -53,7 +53,7 @@ function Services() {
               due to the nature and quality of our pavers lasts for a very long
               time.
             </p>
-            <a href='#'>Learn More</a>
+            {/*<a href='#'>Learn More</a> */}
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@ function Services() {
               parking areas,residential estate entrances, intersections, loading
               dock and filling stations.
             </p>
-            <a href='#'>Learn More</a>
+            {/*<a href='#'>Learn More</a> */}
           </div>
           <div className='services-details__img-holder'>
             <img
@@ -126,7 +126,7 @@ function Services() {
               </li>
             </ul>
 
-            <a href='#'>Learn More</a>
+            {/*<a href='#'>Learn More</a> */}
           </div>
         </div>
       </div>
