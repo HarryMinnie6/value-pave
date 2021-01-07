@@ -8,10 +8,12 @@ import Specialities from "./Specialities/Specialities";
 import About from "./AboutPage/About";
 import Contact from "./ContactPage/Contact";
 import Services from "./ServicesPage/Services";
+import {AnimatePresence, motion} from 'framer-motion'
 
 function App() {
   return (
     <Router>
+    <AnimatePresence>
       <Switch>
         <Route path='/contact'>
           <Header />
@@ -37,6 +39,7 @@ function App() {
           <Footer />
         </Route>
       </Switch>
+      </AnimatePresence>
     </Router>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Services.css";
+import { motion } from "framer-motion";
 
 import ResidentialImage from "../images/patch-3299594_1920.jpg";
 import CommercialImage from "../images/cobble-3430452_1920-1.jpg";
@@ -7,7 +8,13 @@ import IndustrialImage from "../images/quay-5248898_640.jpg";
 
 function Services() {
   return (
-    <section className='services__page' id='services'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className='services__page'
+      id='services'
+    >
       <h1> Services </h1>
 
       <div className='services-details__holder'>
@@ -21,7 +28,7 @@ function Services() {
               range of pavers in clay, cement and simulated stone, from various
               reputable manufacturers in South Africa.
             </p>
-           {/*<a href='#'>Learn More</a> */}
+            {/*<a href='#'>Learn More</a> */}
           </div>
           <div className='services-details__img-holder'>
             <img
@@ -132,7 +139,7 @@ function Services() {
       </div>
 
       {/* --------------------------------------------------------- */}
-    </section>
+    </motion.div>
   );
 }
 

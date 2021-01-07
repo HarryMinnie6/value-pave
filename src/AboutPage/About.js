@@ -1,9 +1,17 @@
-import React from "react";
+import React, {Fragment} from "react";
 import "./About.css";
+import {motion} from 'framer-motion'
+
 
 function About() {
   return (
-    <div className='about'>
+    
+    <motion.div
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className='about'
+    >
       <h1>About Us</h1>
       <div className='aboutDetails__holder'>
         <p className='aboutDetails__paragraph'>
@@ -46,7 +54,9 @@ function About() {
           </p>
         </div>
       </div>
-    </div>
+     
+    </motion.div>
+   
   );
 }
 

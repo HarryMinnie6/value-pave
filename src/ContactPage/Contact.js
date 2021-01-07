@@ -2,10 +2,13 @@ import React from "react";
 import "./Contact.css";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PhoneIcon from "@material-ui/icons/Phone";
+import {motion} from 'framer-motion'
 
 function Contact() {
   return (
-    <div className='contact'>
+    <motion.div  initial={{ opacity: 0 }}
+    exit={{ opacity: 0 }}
+    animate={{ opacity: 1 }} className='contact'>
       <h1>Contact Us</h1>
       <div className='contactDetails__holder'>
         <div className='contactDetails__wrapper'>
@@ -50,7 +53,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
