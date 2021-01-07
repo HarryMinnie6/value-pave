@@ -1,0 +1,105 @@
+.contact {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 100vh; */
+  box-sizing: border-box;
+  background: linear-gradient(rgba(255, 255, 255, 0.85),rgba(255, 255, 255, 0.85)), url(../images/pexels-mustafa-ezz-678289.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.contact > h1 {
+  margin: 20px 0;
+  /* font-size: 30px; */
+  color:black;
+  text-shadow: 0px 0px 5px rgb(179, 179, 179);
+  letter-spacing: 2px;
+  /* font-weight: 300; */
+  /* text-decoration: underline; */
+}
+.contactDetails__holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  /* background-color: rgb(255, 255, 255); */
+  margin-bottom: 70px;
+}
+.contactDetails__wrapper{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.contactDetails__wrapper >h2 {
+    margin: 30px 0 30px ;
+}
+.contact__details {
+  margin:0 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  width: 100%;
+  /* background-color: red; */
+}
+.contact__phone,
+.contact__email {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: blue; */
+}
+.contact__phone >h3, .contact__email > h3 {
+    margin: 10px 0
+}
+.contact__icons {
+    font-size: 28px !important;
+}
+.contact__map{
+    padding: 10px
+}
+.contact__address{
+    padding: 0 0px 5px 0;
+    /* background-color: red; */
+    margin-bottom: 5px;
+    width: 100%;
+}
+.contact__address > p {
+    margin: 10px 0;
+}
+.map-display{
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.maps_link{
+    color: white;
+    cursor: default !important;
+    pointer-events: none !important;
+    user-select: none;
+}
+@media(max-width: 425px) {
+    .contactDetails__wrapper >h2 {
+        font-size: 18px;
+    }
+    .contact__phone,
+.contact__email {
+
+  padding: 15px;
+
+}
+    .contact__phone >h3, .contact__email > h3 {
+        font-size: 16px;
+        margin: 10px 0
+    }
+    .contact__icons {
+        font-size: 25px !important;
+    }
+    .contact__map{
+        padding: 15px
+    }
+   
+}

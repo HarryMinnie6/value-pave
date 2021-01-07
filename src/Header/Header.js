@@ -1,16 +1,16 @@
-import React,{Fragment, useState, useEffect} from "react";
+import React,{Fragment} from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
 function Header() {
       // for navbar to change color on scroll
-  const [scroll, setScroll] = useState(false);
+  // const [scroll, setScroll] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 100);
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     setScroll(window.scrollY > 100);
+  //   });
+  // }, []);
   return (
     <Fragment>
       <input type="checkbox" id="check" />
@@ -32,7 +32,7 @@ function Header() {
       </label>
       
       <nav className="sidebar ">
-      <Link className='header-link'><h1>Value Pave</h1></Link>
+      <Link className='header-link' to='/'><h1>Value Pave</h1></Link>
       
      
         <ul>

@@ -2,9 +2,11 @@
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(1, 0, 3, 0.5)),
     url("../images/paving-stones-3687829_1920.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  height: 85vh;
   position: relative;
   display: flex;
   flex-direction: column;

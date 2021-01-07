@@ -1,6 +1,5 @@
 import React ,{ Fragment}from 'react'
 import ContactBar from '../ContactBar/ContactBar'
-import Specialities from '../Specialities/Specialities'
 
 import './Home.css'
 

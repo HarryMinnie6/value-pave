@@ -4,16 +4,10 @@ import './SpecialityCard.css'
 function SpecialityCard({title, description, image}) {
     return (
         <div className='speciality'>
-          <div className='speciality-inner'>
-            <div className='speciality-front'>
-              <img className='speciality-image' src={image} alt='image' />
-              <h1>{title}</h1>
-            </div>
-            <div className='speciality-back'>
-              <h1>{title}</h1>
-              <p>{description}</p>
-            </div>
-          </div>
+        <h1>{title}</h1>
+        <img className='speciality-image' src={image} alt='brick-img' />
+
+         <p>{description}</p>
         </div>
     )
 }

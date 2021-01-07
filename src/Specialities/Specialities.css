@@ -1,10 +1,16 @@
 .specialities {
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: center;
-justify-content: center;
-  background-color: #f7f7f7;
+/* justify-content: center; */
+  background-color: rgb(247, 247, 247);
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 10px
+  
 }
+
 .specialities > h1 {
   margin: 20px;
   font-size: 30px;
@@ -13,7 +19,8 @@ justify-content: center;
 .specialities__types{
     display: flex;
     margin: 10px 0;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    height: fit-content;
 }
 
 

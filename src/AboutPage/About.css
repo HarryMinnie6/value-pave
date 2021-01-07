@@ -1,0 +1,52 @@
+.about {
+  margin-top: 50px;
+
+  box-sizing: border-box;
+  background: url(../images/paving-stones-3774723_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about > h1 {
+  margin: 20px 0;
+  /* font-size: 30px; */
+  color: black;
+  text-shadow: 0px 0px 5px rgb(179, 179, 179);
+  letter-spacing: 2px;
+  /* font-weight: 300; */
+  /* text-decoration: underline; */
+}
+.aboutDetails__holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 70px;
+  padding-bottom: 20px;
+}
+.aboutDetails__paragraph {
+  margin: 30px 0 15px;
+  padding: 15px 20px;
+  max-width: 900px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.aboutDetails__reasons {
+  max-width: 900px;
+  /* font-size: 18px; */
+  padding: 15px;
+}
+.aboutDetails__reasons > h3 {
+      text-decoration: underline;
+
+}
+.aboutDetails__reasons > p {
+margin: 20px 0
+}
